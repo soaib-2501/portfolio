@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <table id="table"></table>
+    </div>
+    <div>
+        <button onclick="abc()">Add row</button>
+    </div>
+<script>
+    let x = {
+        name:'raj' , age:24 , mobile:9811352646
+    }; //object created 
+
+    
+    function abc(){
+        for(let k in x) {
+            let row = document.createElement('tr');
+        let cell1 = document.createElement('td');
+        cell1.innerText = x[k];
+        row.style.color = "red";
+        row.style.backgroundColor = "pink";
+        row.appendChild(cell1);
+        document.getElementById("table").appendChild(row);
+    }
+}
+    
+        
+    
+</script>   
+</body>
+</html>

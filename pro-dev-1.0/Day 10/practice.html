@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text" id="Name" />
+    </form>
+    <p id="p1" onmouseover="abc()" onmouseout="abcd()">this is a para</p>
+<script>
+    function abc() {
+        let x = document.getElementById("p1");
+        x.innerText = "soaib";
+    }
+    function abcd() {
+        let x = document.getElementById("p1");
+        x.innerText = "this is a para";
+    }
+
+   
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <h1>this is first division</h1>
+    </div>
+    <div id="d2">
+        <p>this is second division</p>
+    </div>
+    <div>
+        <button onclick="abc()">Add para</button>
+    </div>
+<script>
+    function abc(){
+       let x =  document.createElement("p"); //to create new element at runtime -- p ka object bngya
+       x.innerText = "this para is added by button"; // object ki value set hogyi
+       document.getElementById("d1").appendChild(x); //added at the last
+    }
+</script>
+</body>
+</html>
